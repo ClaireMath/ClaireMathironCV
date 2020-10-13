@@ -7,6 +7,76 @@
   outline: none;
 }
 body {
+    font-family: serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+.bigContainerleft {
+    width: 40%;
     background-color: darkcyan;
-    color: white;
+    color: azure;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.smallCtnLeft {
+    font-size: 20px;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    
+}
+.skillList {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* align-items: space-between;
+    justify-content: space-around; */
+}
+.iconAndText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bigContainerRight {
+    padding: 30px;
+    width: 60%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+#photo {
+    border-radius: 60px;
+}
+h1 {
+    position: relative;
+    font-size: 4rem;
+    /* left: -1500px; */
+}
+h2 {
+    position: relative;
+    /* right: -1500px; */
+    font-size: 3rem;
+}
+h3 {
+    position: relative;
+    /* right: -1500px; */
+    font-size: 2rem;
+}
+h4 {
+    font-size: 25px;
 }
