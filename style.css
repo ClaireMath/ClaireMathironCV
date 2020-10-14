@@ -11,7 +11,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 2px solid black;
+    border: 4px solid black;
+
     margin: 30px;
 }
 h2 {
@@ -29,25 +30,35 @@ h2 {
 }
 .smallCtnLeft {
     font-size: 20px;
-    /* width: 80%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     text-align: center;
-    
 }
 .skillList {
     display: flex;
     flex-direction: row;
     text-align: center;
-    /* align-items: space-between;
-    justify-content: space-around; */
+    /* align-items: space-between;*/
+    justify-content: space-between; 
+}
+.skillList ul li {
+    text-align: justify;
 }
 .iconAndText {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.leftIcon {
+    margin-right : 10px;
+}
+.leftUL {
+    padding-right: 20px;
+}
+.rightUL {
+    padding-left: 20px;
 }
 .bigContainerRight {
     padding: 30px;
@@ -64,19 +75,42 @@ h2 {
 }
 h1 {
     position: relative;
-    font-size: 4rem;
+    font-size: 55px;
     /* left: -1500px; */
 }
 h2 {
     position: relative;
     /* right: -1500px; */
-    font-size: 3rem;
+    font-size: 45px;
 }
 h3 {
     position: relative;
     /* right: -1500px; */
-    font-size: 2rem;
+    font-size: 35px;
+    text-align: left;
 }
 h4 {
     font-size: 25px;
+}
+h5 {
+    font-size: 20px;
+}
+.smallCtnRight {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: justify;
+}
+.au-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.studies {
+    margin-top: 80px;
+}
+.experience {
+    margin-top: 60px;
 }
