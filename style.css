@@ -73,7 +73,7 @@ h2 {
 
 .bigContainerRight {
     padding: 30px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 60%;
     color: black;
     display: flex;
@@ -88,6 +88,7 @@ h2 {
 
 h1 {
     position: relative;
+    text-align: center;
     font-size: 55px;
     min-width: 700px;
     color: #FFFFFF;
@@ -104,6 +105,7 @@ h1 {
 
 h2 {
     position: relative;
+    text-align: center;
     margin-left: 120%;
     font-size: 45px;
     color: #FFFFFF;
@@ -121,10 +123,11 @@ h2 {
 
 h3 {
     position: relative;
+    text-align: center;
     margin-left: 120%;
-    min-width: 750px;
+    min-width: 700px;
     font-size: 35px;
-    text-align: left;
+    /* text-align: left; */
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 5px,
         #FFF 0px 0px 10px,
@@ -204,6 +207,9 @@ img:hover {
     border-radius: 15px;
     margin-right: 30%;
 }
+.addTel {
+    display: none;
+}
 
 
 /* Tablette landscape*/
@@ -220,6 +226,10 @@ img:hover {
         font-size: 24px;
         min-width: 500px;
         max-width: 550px;
+        animation-name: slidein3;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     }
 
     h4 {
@@ -229,16 +239,24 @@ img:hover {
     h5 {
         font-size: 20px;
     }
-    .introduction {
-        padding-top: 30px;
-    }
-    .studies {
+    @keyframes slidein3 {
+        from {
+            margin-left: 120%;
+        }
+    
+        to {
+            margin-left: 11%;
+            color: black;
+            text-shadow: none;
+    
+        }
+    }    
+    .studies, .experience {
         margin-top: 40px;
     }
 .bigContainerRight {
-    padding: 10px;
+    padding: 20px;
     padding-top: 30px;
-    /* margin-left: 10px; */
 }
     .smallCtnLeft,
     .smallCtnRight {
@@ -249,7 +267,7 @@ img:hover {
     #photo {
         width: 150px;
     }
-    .sup {
+    .supTablet {
         display: none;
     }
 
@@ -259,7 +277,7 @@ img:hover {
         }
 
         to {
-            margin-left: 12%;
+            margin-left: 0%;
             color: black;
             text-shadow: none;
 
@@ -272,7 +290,7 @@ img:hover {
         }
 
         to {
-            margin-left: 12%;
+            margin-left: 0%;
         }
     }
 }
@@ -292,6 +310,10 @@ img:hover {
         font-size: 24px;
         min-width: 350px;
         max-width: 400px;
+        animation-name: slidein3;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 
     h4 {
@@ -315,7 +337,7 @@ img:hover {
     #photo {
         width: 150px;
     }
-    .sup {
+    .supTablet {
         display: none;
     }
     .studies {
@@ -328,7 +350,7 @@ img:hover {
         }
 
         to {
-            margin-left: 20%;
+            margin-left: 0%;
             color: black;
             text-shadow: none;
 
@@ -341,7 +363,18 @@ img:hover {
         }
 
         to {
-            margin-left: 20%;
+            margin-left: 0%;
+        }
+    }
+    @keyframes slidein3 {
+        from {
+            margin-left: 120%;
+        }
+
+        to {
+            margin-left: 21%;
+            color: black;
+            text-shadow: none;
         }
     }
 }
@@ -350,25 +383,40 @@ img:hover {
 /* Téléphone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     h1 {
-        font-size: 32px;
-    }
-
-    h2 {
         font-size: 28px;
     }
 
+    h2 {
+        font-size: 25px;
+    }
+
     h3 {
-        font-size: 24px;
+        font-size: 22px;
         min-width: 250px;
         max-width: 300px;
+        animation-name: slidein3;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes slidein3 {
+        from {
+            margin-left: 120%;
+        }
+
+        to {
+            margin-left: 28%;
+            color: black;
+            text-shadow: none;
+        }
     }
 
     h4 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     h5 {
-        font-size: 20px;
+        font-size: 18px;
     }
 .bigContainerRight {
     padding: 10px;
@@ -377,14 +425,14 @@ img:hover {
 }
     .smallCtnLeft,
     .smallCtnRight {
-        font-size: 18px;
+        font-size: 16px;
         padding: 15px;
     }
 
     #photo {
         width: 150px;
     }
-    .sup {
+    .supTablet {
         display: none;
     }
     .studies {
@@ -397,7 +445,7 @@ img:hover {
         }
 
         to {
-            margin-left: 27%;
+            margin-left: 0%;
             color: black;
             text-shadow: none;
 
@@ -410,7 +458,7 @@ img:hover {
         }
 
         to {
-            margin-left:27%;
+            margin-left:0%;
         }
     }
 
@@ -421,6 +469,12 @@ img:hover {
         width: 100%;
     }
     .bigContainerRight {
-        width: 100%;
+        display: none;
+    }
+    .subTel {
+        display: none;
+    }
+    .addTel {
+        display: block;
     }
 }
