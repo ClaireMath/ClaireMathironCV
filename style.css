@@ -16,10 +16,6 @@ body {
 
     margin: 30px;
 }
-
-h2 {
-    font-size: 20px;
-}
 a:visited, a:active {
     /* text-decoration: none; */
     color: white;
@@ -93,12 +89,15 @@ a:visited, a:active {
 #photo {
     border-radius: 60px;
 }
+.introduction {
+    overflow: hidden;
+}
 
 h1 {
     position: relative;
     text-align: center;
     font-size: 55px;
-    min-width: 700px;
+    /* min-width: 535px; */
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 5px,
         #FFF 0px 0px 10px,
@@ -225,8 +224,12 @@ img:hover {
 
 /* Tablette landscape*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .introduction {
+        width: 100%;
+    }
     h1 {
         font-size: 32px;
+        /* width: 100%; */
     }
 
     h2 {
@@ -256,7 +259,7 @@ img:hover {
         }
     
         to {
-            margin-left: 11%;
+            margin-left: 0%;
             color: black;
             text-shadow: none;
     
@@ -309,8 +312,12 @@ img:hover {
 
 /* Tablette portrait */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .introduction {
+        width: 100%;
+    }
     h1 {
         font-size: 32px;
+        width: 100%;
     }
 
     h2 {
@@ -321,6 +328,7 @@ img:hover {
         font-size: 24px;
         min-width: 350px;
         max-width: 400px;
+        width: 100%;
         animation-name: slidein3;
         animation-duration: 4s;
         animation-delay: 1s;
@@ -383,7 +391,7 @@ img:hover {
         }
 
         to {
-            margin-left: 21%;
+            margin-left: 0%;
             color: black;
             text-shadow: none;
         }
@@ -419,7 +427,7 @@ img:hover {
         }
 
         to {
-            margin-left: 28%;
+            margin-left: 0%;
             color: black;
             text-shadow: none;
         }
